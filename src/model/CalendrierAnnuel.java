@@ -31,6 +31,7 @@ public class CalendrierAnnuel {
 		return false;
 	}
 	
+	// Classe interne
 	private static class Mois {
 		private String nom;
 		private boolean[] jours;
@@ -42,16 +43,13 @@ public class CalendrierAnnuel {
 		
 		private boolean estLibre(int jour) {
 			if (jours[jour]) {
-				System.out.println("1: false");
 				return false;
 			}
-			System.out.println("2: true");
 			return true;
 		}
 		
 		private void reserver(int jour) {
 			jours[jour] = true;
-			System.out.println("3: " +jours[jour]);
 		}
 	}
 
