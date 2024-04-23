@@ -1,16 +1,12 @@
 package model;
 
 public class ReservationHotel extends Reservation {
-	private int jour;
-	private int mois;
 	private int nbLitsSimples;
 	private int nbLitsDoubles;
 	private int numChambre;
 
 	protected ReservationHotel(int jour, int mois, int nbLitsSimples, int nbLitsDoubles, int numChambre) {
 		super(jour, mois);
-		this.jour = jour;
-		this.mois = mois;
 		this.nbLitsSimples = nbLitsSimples;
 		this.nbLitsDoubles = nbLitsDoubles;
 		this.numChambre = numChambre;
