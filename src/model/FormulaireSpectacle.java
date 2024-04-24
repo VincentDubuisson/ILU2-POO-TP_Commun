@@ -2,7 +2,7 @@ package model;
 
 public class FormulaireSpectacle extends Formulaire{
 	private int numZone;
-	private int identification = 0;
+	private int identification;
 	
 	public FormulaireSpectacle(int jour, int mois, int numZone) {
 		super(jour, mois);
@@ -26,7 +26,7 @@ public class FormulaireSpectacle extends Formulaire{
 	}
 	
 	public void setIdentificationEntite(int id) {
-		identification = id;
+		this.identification = id;
 	}
 
 }

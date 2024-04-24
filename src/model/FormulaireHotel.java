@@ -3,7 +3,7 @@ package model;
 public class FormulaireHotel extends Formulaire {
 	private int nbLitsSimples;
 	private int nbLitsDoubles;
-	private int identification = 0;
+	private int identification;
 	
 	public FormulaireHotel(int jour, int mois, int nbLitsSimples, int nbLitsDoubles) {
 		super(jour, mois);
@@ -32,7 +32,7 @@ public class FormulaireHotel extends Formulaire {
 	}
 	
 	public void setIdentificationEntite(int id) {
-		identification = id;
+		this.identification = id;
 	}
 
 }

@@ -8,5 +8,9 @@ public abstract class Formulaire {
 		this.jour = jour;
         this.mois = mois;
 	}
+	
+	public abstract int getJour();
+	
+	public abstract int getMois();
 
 }
